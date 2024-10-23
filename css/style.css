@@ -1,4 +1,4 @@
-html{
+.body {
     font-family:'Bitter';
     font-size: 16px;
 }
@@ -43,7 +43,7 @@ html{
     font-style: normal;
     }
 
-.main-nav a {
+.site-navigation-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -51,101 +51,100 @@ html{
     color: black;
     text-decoration: none;
 }
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 86px;
-    line-height: 103px;
-    }
-.hero p {
+.hero {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
 }
-h2 {
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 103px;
+    }
+
+.section-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
-.biography-content p {
+.biography-content {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
 }
-.biography-content :first-child {
+.biography-content-subtitle {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
     line-height: 115px;
 }
-hr {
-    width: 18px;
-    height: 4px;
-    border: 1px solid black;
-    background-color: black;
-    margin-left: 0;
-}
-.biography-content q {
+
+.biography-content-quote {
+    font-family:'Bitter';
+    font-weight: 400;
     font-size: 26px;
     line-height: 31px;
 }
-.designers-content h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    line-height: 19px;
-}
-.designers-content p {
+.designers-content{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 19px;
 }
-.designers-content b {
+.designers-content-subtitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 19px;
 }
-.testimonials-site p {
+
+.designers-content-bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 19px;
 }
-.testimonials-site a {
+
+.testimonials-site-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 19px;
+}
+.testimonials-site-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 19px;
     color: black;
     text-decoration: none;
 }
-.testimonials-content blockquote {
+.testimonials-content-blockquote {
     font-size: 32px;
     line-height: 38px;
 }
-.strong-points-content h2{
+.strong-points-title {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
     line-height: 86px;
 }
-.strong-points-content li {
+.strong-points-item {
     font-size: 34px;
     line-height: 41px;
 }
-address a {
+.footer-contacts-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 26px;
     text-decoration: none;
 }
-.footer-logo p {
+.footer-logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
 }
-.footer-logo b {
+.footer-logo-bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 24px;
