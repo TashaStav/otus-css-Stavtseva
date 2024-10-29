@@ -44,7 +44,6 @@
     }
 
 .main-header {
-    max-width: 1397px;
     margin: 0 auto;
     
     }
@@ -58,18 +57,19 @@
     width: 182px;
     height: 103px; 
     margin-right: 20px;
+    margin-left: 23px;
 }
 .site-navigation {
     display: flex;
     justify-content: end;
-    width: 1195px;
 }
 .site-navigation-item {
     height: 28px;
-    margin-right: 55px;
+    padding-right: 55px;
 }
 .site-navigation-item:last-child{
-    margin-right: 0;
+    padding-right: 0;
+    margin-right: 20px;
 }
 .site-navigation-link {
     font-family: 'Roboto', sans-serif;
