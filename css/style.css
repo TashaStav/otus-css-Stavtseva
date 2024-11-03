@@ -1,6 +1,8 @@
 .body {
     font-family:'Bitter';
     font-size: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 @font-face {
@@ -43,10 +45,10 @@
     font-style: normal;
     }
 
-.main-header {
+/*.main-header {
     margin: 0 auto;
     
-    }
+    }*/
 .main-nav {
     height: 135px;
     display: flex;
@@ -113,20 +115,48 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    flex-grow: 1;
+    transform: rotate(-90deg) translateX(-40%);
+    margin-left:29px;
+    position:relative;
+    left: -40px;
+}
+.section-biography {
+    max-width: 1165px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    display:flex;
+}
+.section-biography-img {
+    width: 49%;
+    object-fit: cover;
 }
 .biography-content {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .biography-content-subtitle {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
     line-height: 115px;
+    margin-bottom: 36px;
 }
-
+.biography-content p {
+    margin-bottom: 36px;
+}
+.rectangle {
+    width: 20px;
+    height: 6px;
+    background-color:#0D0D0D;
+    margin-bottom: 18px;
+}
 .biography-content-quote {
     font-family:'Bitter';
     font-weight: 400;
