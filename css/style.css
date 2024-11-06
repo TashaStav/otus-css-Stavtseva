@@ -43,6 +43,34 @@
     font-style: normal;
     }
 
+.main-header {
+    margin: 0 auto;
+    
+    }
+.main-nav {
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.logo {
+    width: 182px;
+    height: 103px; 
+    margin-right: 20px;
+    margin-left: 23px;
+}
+.site-navigation {
+    display: flex;
+    justify-content: end;
+}
+.site-navigation-item {
+    height: 28px;
+    padding-right: 55px;
+}
+.site-navigation-item:last-child{
+    padding-right: 0;
+    margin-right: 20px;
+}
 .site-navigation-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -56,12 +84,28 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
+    height: 630px;
+    background: url(../img/background-image\ hero\ section.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 151px;
+}
+.container-section-hero {
+    height: 360px;
+    width: 690px;
+    background-color: #FFFFFF;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
 }
 .hero-title {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
     line-height: 103px;
+    margin-bottom: 14px;
     }
 
 .section-title {
