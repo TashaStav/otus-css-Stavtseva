@@ -55,7 +55,7 @@
 .logo {
     width: 182px;
     height: 103px;
-    margin: 12% 0 12% 17%;
+    margin: 16px 20px 16px 23px;
 }
 
 .site-navigation {
@@ -63,7 +63,8 @@
     justify-content: end;
 }
 .site-navigation-item {
-    padding-right: 3.438rem;
+    padding-right: 55px;
+
 }
 .site-navigation-item:last-child{
     padding-right: 0;
@@ -77,6 +78,7 @@
     color: black;
     text-decoration: none;
 }
+/* Вторая секция. Заголовок */
 .hero {
     max-width: 1440px;
     margin: 0 auto;
@@ -84,46 +86,47 @@
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.438rem;
-    height: 630px;
+    height: 39.375rem;
     background: url(../img/background-image\ hero\ section.jpg) center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-bottom: 151px;
+    margin-bottom: 9.438rem;
 }
 .container-section-hero {
-    height: 360px;
-    width: 690px;
+    height: 57%;
+    width: 48%;
     background-color: #FFFFFF;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center
+    align-items:center;
+    gap: 14px;
 }
 .hero-title {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 86px;
-    line-height: 103px;
-    margin-bottom: 14px;
+    font-size: 5.375rem;
+    line-height: 6.438rem;
+    margin:0 9.4% 0 9.4%;
     }
-
+    /* Третья секция.Biography */
 .section-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     flex-grow: 1;
     transform: rotate(-90deg) translateX(-40%);
-    margin-left:29px;
+    margin-left: 1.813rem;
     position:relative;
     left: -40px;
 }
 .section-biography {
     box-sizing: border-box;
-    max-width: 81vw;
+    max-width: 1165px;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 9.375rem;
     display:flex;
 }
 .section-biography-img {
@@ -133,8 +136,8 @@
 .biography-content {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
     width: 39%;
     display: flex;
     flex-direction: column;
@@ -143,8 +146,8 @@
 .biography-content-subtitle {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 86px;
-    line-height: 115px;
+    font-size: 5.375rem;
+    line-height: 7.188rem;
     margin-bottom: 36px;
 }
 .biography-content p {
@@ -159,9 +162,10 @@
 .biography-content-quote {
     font-family:'Bitter';
     font-weight: 400;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 1.625rem;
+    line-height: 1.938rem;
 }
+/* Четвертая секция. Designers */
 .section-designers {
     margin-bottom: 115px;
 }
@@ -315,6 +319,7 @@
         align-items:center;
     }
     .section-strong-points-img {
+        min-width: 0px;
         width:100%;
         object-fit: cover;
     }
