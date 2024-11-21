@@ -273,6 +273,7 @@
     text-align: center; 
 }
 
+/* Шестая секция. Strong points */
 .section-strong-points {
     margin-bottom: 115px;
 }
@@ -284,6 +285,7 @@
 }
 
 .strong-points-wrap {
+    margin-left: 1.4%;
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
@@ -291,21 +293,20 @@
     overflow-x: auto;
 }
 .strong-points-content {
-    min-width: 451px;
+    width: 451px;
     display: flex;
     flex-direction: column;
     align-items:center;
 }
 .section-strong-points-img {
-    min-width: 335px;
-    width:100%;
+    width: 335px; 
     object-fit: cover;
 }
 @supports (display: grid) {
     .strong-points-wrap {
         display: grid;
-        margin-left: 20px;
-        grid-template-columns: 24% 24% 32% auto;
+        margin-left: 1.4%;
+        grid-template-columns: 335px 335px 451px auto;
         column-gap:21px;
         overflow-x: auto;
     }
@@ -314,27 +315,18 @@
         flex-direction: column;
         align-items:center;
     }
-    .section-strong-points-img {
-        width:100%;
-        object-fit: cover;
-    }
 }
-.strong-points-content {
-    min-width: 451px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
+
 .strong-points-title {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 86px;
-    line-height: 86px;
-    margin-bottom: 28px;
+    font-size: 5.375rem;
+    line-height: 5.375rem;
+    margin-bottom: 4.6%;
 }
 .strong-points-item {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
 }
 
 .footer {
