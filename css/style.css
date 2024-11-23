@@ -1,4 +1,4 @@
-.body {
+html {
     font-family:'Bitter';
     font-size: 1rem;
     margin: 0 auto;
@@ -43,28 +43,27 @@
     font-weight: 900;
     font-style: normal;
     }
-
-
 .main-nav {
-    max-width: 1440px;
+    min-height: 135px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items:center
-}
-.logo {
-    width: 182px;
-    height: 103px;
-    margin: 16px 20px 16px 23px;
+    align-items:center;
 }
 
+.logo-wrap {
+    max-width: 182px;
+    max-height: 103px;
+    margin: 1rem 1.25rem 1rem 1.438rem;
+}
 .site-navigation {
     display: flex;
     justify-content: end;
+    align-items:flex-start;
+    width: 83%;
 }
 .site-navigation-item {
-    padding-right: 55px;
-
+    padding-right: 4.6%;
 }
 .site-navigation-item:last-child{
     padding-right: 0;
@@ -80,7 +79,6 @@
 }
 /* Вторая секция. Заголовок */
 .hero {
-    max-width: 1440px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -109,7 +107,9 @@
     font-size: 5.375rem;
     line-height: 6.438rem;
     margin:0 9.4% 0 9.4%;
+    text-align: center;
     }
+
     /* Третья секция.Biography */
 .section-title {
     font-family: 'Roboto', sans-serif;
@@ -124,7 +124,7 @@
 }
 .section-biography {
     box-sizing: border-box;
-    max-width: 1165px;
+    max-width: 81%;
     margin: 0 auto;
     margin-bottom: 9.375rem;
     display:flex;
@@ -167,7 +167,7 @@
 }
 /* Четвертая секция. Designers */
 .section-designers {
-    margin-bottom: 115px;
+    margin-bottom: 8.125rem;
 }
 .section-title.designers {
     position: static;
@@ -207,13 +207,12 @@
     font-weight: 700;
     line-height: 19px;
 }
-
+/* Пятая секция.Testimonials */
 .section-testimonials {
-    /* max-width: 1440px; */
     margin: 0 auto;
     margin-bottom: 150px;
     display: grid;
-    grid-template-columns: 9% 7% 32% 10.5% 32% 9%;
+    grid-template-columns: 1fr 2fr 32% 10.5% 32% 9%;
     grid-template-rows: 3% 25% 34% 34% auto;
 }
 
@@ -221,20 +220,25 @@
     grid-column: 2/3;
     grid-row: 4/5;
     justify-self: start;
-    transform: rotate(-90deg) translateX(-30%) translateY(37%);
-
+    transform: rotate(-90deg) translate(-95%, 100%);
+    max-width: 190px;
+    max-height: 49px;
 }
 .testimonials-site-2 {
     grid-column: 2/3;
     grid-row: 3/4;
     justify-self: start;
-    transform: rotate(-90deg) translateX(-30%) translateY(37%);
+    transform: rotate(-90deg) translate(-95%, 100%);
+    max-width: 190px;
+    max-height: 49px;
 }
 .testimonials-site-3 {
     grid-column: 2/3;
     grid-row: 2/3;
     justify-self: start;
-    transform: rotate(-90deg) translateX(-10%) translateY(37%);
+    transform: rotate(-90deg) translate(-50%, 115%);
+    max-width: 190px;
+    max-height: 49px;
 }
 .section-testimonials-img {
     grid-column: 3/4;
@@ -277,8 +281,9 @@
     text-align: center; 
 }
 
+/* Шестая секция. Strong points */
 .section-strong-points {
-    margin-bottom: 115px;
+    margin-bottom: 8.438rem;
 }
 .section-title.strong-points {
     position: static;
@@ -288,6 +293,7 @@
 }
 
 .strong-points-wrap {
+    margin-left: 1.4%;
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
@@ -295,21 +301,20 @@
     overflow-x: auto;
 }
 .strong-points-content {
-    min-width: 451px;
+    width: 451px;
     display: flex;
     flex-direction: column;
     align-items:center;
 }
 .section-strong-points-img {
-    min-width: 335px;
-    width:100%;
+    width: 335px; 
     object-fit: cover;
 }
 @supports (display: grid) {
     .strong-points-wrap {
         display: grid;
-        margin-left: 20px;
-        grid-template-columns: 24% 24% 32% auto;
+        margin-left: 1.4%;
+        grid-template-columns: 335px 335px 451px auto;
         column-gap:21px;
         overflow-x: auto;
     }
@@ -318,38 +323,29 @@
         flex-direction: column;
         align-items:center;
     }
-    .section-strong-points-img {
-        min-width: 0px;
-        width:100%;
-        object-fit: cover;
-    }
 }
-.strong-points-content {
-    min-width: 451px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
+
 .strong-points-title {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 86px;
-    line-height: 86px;
-    margin-bottom: 28px;
+    font-size: 5.375rem;
+    line-height: 5.375rem;
+    margin-bottom: 4.6%;
 }
 .strong-points-item {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
 }
 
+/* Седьмая секция. Футер */
 .footer {
     background-color:#0D0D0D;
     color:white;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding:70px 24px 70px 20px;
-    column-gap:20px;
+    padding: 70px 1.5rem 70px 1.25rem;
+    column-gap:1.4%;
 }
 .footer-contacts {
     width: 31%;
@@ -357,28 +353,28 @@
 .footer-contacts-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     text-decoration: none;
     color:#FFFFFF;
 }
 .footer-logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
     width: 31%;
     text-align: center;
 }
 .footer-logo-bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
 }
 .footer-copyright {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.188rem;
     width: 31%;
     text-align: end;
 }
