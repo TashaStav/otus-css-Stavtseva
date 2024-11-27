@@ -1,7 +1,7 @@
 .body {
     font-family:'Bitter';
     font-size: 16px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -119,7 +119,8 @@
     left: -40px;
 }
 .section-biography {
-    max-width: 1165px;
+    box-sizing: border-box;
+    max-width: 81%;
     margin: 0 auto;
     margin-bottom: 150px;
     display:flex;
@@ -162,7 +163,7 @@
 }
 .section-designers {
     margin-bottom: 115px;
-    max-width: 1420px;
+    /* max-width: 1420px; */
 }
 .section-title.designers {
     position: static;
@@ -204,9 +205,9 @@
 }
 
 .section-testimonials {
-    max-width: 1440px;
-    margin-bottom: 150px;
+    /* max-width: 1440px; */
     margin: 0 auto;
+    margin-bottom: 150px;
     display: grid;
     grid-template-columns: 9% 7% 32% 10.5% 32% 9%;
     grid-template-rows: 3% 25% 34% 34% auto;
@@ -271,27 +272,89 @@
     align-items:center;
     text-align: center; 
 }
+
+/* Шестая секция. Strong points */
+.section-strong-points {
+    margin-bottom: 115px;
+}
+.section-title.strong-points {
+    position: static;
+    transform: none;
+    margin-left: 18%;
+    margin-bottom: 30px;
+}
+
+.strong-points-wrap {
+    margin-left: 1.4%;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    column-gap:20px;
+    overflow-x: auto;
+}
+.strong-points-content {
+    width: 451px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.section-strong-points-img {
+    width: 335px; 
+    object-fit: cover;
+}
+@supports (display: grid) {
+    .strong-points-wrap {
+        display: grid;
+        margin-left: 1.4%;
+        grid-template-columns: 335px 335px 451px auto;
+        column-gap:21px;
+        overflow-x: auto;
+    }
+    .strong-points-content {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
 .strong-points-title {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 86px;
-    line-height: 86px;
+    font-size: 5.375rem;
+    line-height: 5.375rem;
+    margin-bottom: 4.6%;
 }
 .strong-points-item {
-    font-size: 34px;
-    line-height: 41px;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+}
+
+.footer {
+    background-color:#0D0D0D;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:70px 24px 70px 20px;
+    column-gap:20px;
+}
+.footer-contacts {
+    width: 31%;
 }
 .footer-contacts-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 26px;
     text-decoration: none;
+    color:#FFFFFF;
 }
 .footer-logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+    width: 31%;
+    text-align: center;
 }
 .footer-logo-bold {
     font-family: 'Roboto', sans-serif;
@@ -303,5 +366,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 19px;
+    width: 31%;
+    text-align: end;
 }
 
