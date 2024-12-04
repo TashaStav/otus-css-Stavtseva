@@ -34,7 +34,7 @@
             </ul>
         </nav>
     </header>
-    <!--Вторая секция. Заголовок-->
+    <!-- Вторая секция. Заголовок -->
     <main class="main-content">
         <section class="hero">
             <div class="container-section-hero">
@@ -44,23 +44,34 @@
         </section>
 <!--Третья секция.Biography -->
 <section class="section-biography" id="biography-id">
-    <img class="section-biography-img" src="img/photo Katya Mills.jpg" alt="Девушка идет по песку" width="571" height="840">
+    <picture>
+    <source srcset="img/Katya Mills mob.jpg"  media="(max-width: 768px)">
+    <img class="section-biography-img" src="img/photo Katya Mills.jpg" alt="Девушка идет по песку"  width="571" height="840">
+    </picture>
     <div class="wrp-title">
     <h2 class="section-title">Biography</h2>
     </div>
     <div class="biography-content">
-        <h3 class="biography-content-subtitle">Katya<br> Mills</h3>
-        <p>Art Director <br> Scenography / Styling / Creative Photography / Design</p>
+        <h3 class="biography-content-subtitle"><span>-</span>Katya<br> Mills</h3>
+        <p class="biography-desktop-version">Art Director <br> Scenography / Styling / Creative Photography / Design</p>
+        <ul class="biography-mobile-version">
+            <li>Art Director</li>
+            <li>-Scenography</li>
+            <li>-Styling</li>
+            <li>-Creative Photography</li>  
+            <li>-Design</li>
+        </ul>
         <div class="rectangle"></div>
-        <q class="biography-content-quote">"The more I deal with the work<br> as something that is my own,  as something that is personal, the <br>more successful it is."</q>
+        <q class="biography-content-quote">"The more I deal with the work as something that is my own,<br>  as something that is personal, the more <br> successful it is."</q>
     </div>
 </section>
-<!--Четвертая секция. Designers-->
+<!-- Четвертая секция. Designers-->
 <section class="section-designers" id="designers-id">
     <h2 class="section-title designers">Designers</h2>
     <div class="section-designers-wrap">
     <div class="designers-content">
-        <img src="img/photo jess wonder.jpg" alt="Девушка на фоне холма и неба" width="572" height="538">
+        <img class="designers-content_desktop-img" src="img/photo jess wonder.jpg" alt="Девушка на фоне холма и неба">
+        <img class="designers-content_mobile-img" src="img/photo jess wonder mobile.png" alt="Девушка на фоне холма и неба">
         <div class="designers-content-wrap">
         <h3 class="designers-content-subtitle">Jess Wonder</h3>
         <p><span class="designers-content-bold">From/</span>Be more flower</p>
@@ -68,19 +79,19 @@
         </div>
     </div>
     <div class="designers-content">
-        <img src="img/photo kameron clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
+        <img class="designers-content-img" src="img/photo kameron clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
         <h3 class="designers-content-subtitle">Kameron Clein</h3>
         <p><span class="designers-content-bold">From/</span> Be more flower</p>
         <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
     </div>
     <div class="designers-content">
-        <img src="img/photo louisse red.jpg" alt="Девушка с ежедневником в руках" width="336" height="440">
+        <img class="designers-content-img" src="img/photo louisse red.jpg" alt="Девушка с ежедневником в руках" width="336" height="440">
         <h3 class="designers-content-subtitle">LOUISSE RED</h3>
         <p><span class="designers-content-bold">From/</span> Be more flower</p>
         <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
     </div>
     <div class="designers-content">
-        <img src="img/photo kameron clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
+        <img class="designers-content-img" src="img/photo kameron clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
         <h3 class="designers-content-subtitle">Kameron Clein</h3>
         <p><span class="designers-content-bold">From/</span> Be more flower</p>
         <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
@@ -105,7 +116,10 @@
 <h2 class="section-title testimonials">Testimonials</h2>
 <div class="testimonials-content">
     <blockquote class="testimonials-content-blockquote">I just really <br>want to do<br> good work <br>and work with<br> some great<br> people, people <br>who challenge<br> me.</blockquote>
+    <blockquote class="testimonials-content-blockquote-mobile">I just really want to do<br> good work and work <br> with some great people,<br> people who challenge<br> me.</blockquote>
     <img class="testimonials-content-img" src="img/photo-2 section-testimonials.jpg" alt="Девушка с сумкой-сеткой в руках" width="221" height="333">
+    <img class="testimonials-content-img-mobile" src="img/photo-2 section-testimonials-mobile.png" alt="Девушка с сумкой-сеткой в руках" width="414" height="330">
+
 </div>
      </section>
 <!--Шестая секция. Strong points-->
@@ -129,8 +143,24 @@
             <li class="strong-points-item">Nature</li>
         </ul>
     </div>
-    <p><img  src="img/photo-3 section-strong points.jpg" alt="Кофейня изнутри" width="335" height="555"></p>
+    <p><img class="section-strong-points-last-img" src="img/photo-3 section-strong points.jpg" alt="Кофейня изнутри" width="335" height="555"></p>
 </div>
+</section>
+<section class="mobile-menu">
+<nav class="nav-mobile">
+    <ul class="site-navigation-mobile">
+        <li class="site-navigation-item"><a class="site-navigation-link" href="#biography-id">B</a></li>
+        <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#designers-id">D</a>
+         </li>
+         <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#testimonials-id">T</a>
+        </li>
+        <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#strong points-id">S</a>
+        </li>
+        </ul>
+</nav>
 </section>
     </main>
     <!--Седьмая секция. Футер-->
