@@ -406,9 +406,103 @@ html {
 }
 
 @media (max-width: 768px) {
-    .main-nav {
-        display: none;
+    .body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
+    html {
+        height: -webkit-fill-available;
+      }
+     .logo-wrap {
+        display: none;
+     }
+
+    .main-header {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 60vh;
+        z-index: 2;
+        background-color:white;
+    }
+    .main-nav {
+        min-height: auto;
+        width: 100%;
+    }
+    .site-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 16px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .site-navigation-link:hover {
+        font-weight: 700;
+        border-bottom: 1px solid black;
+    }
+    .replaced-biography {
+        visibility: hidden;
+    }
+    .replaced-biography::after {
+        visibility: visible;
+        position: absolute;
+        top: 18px;
+        left: 50px;
+        content: "B";
+    }
+    .replaced-designers {
+        visibility: hidden;
+        position: relative;
+    }
+    .replaced-designers::after {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 81px;
+        content: "D";
+    }
+    .replaced-testimonials {
+        visibility: hidden;
+        position: relative;
+    }
+    .replaced-testimonials::after {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 104px;
+        content: "T";
+    }
+    .replaced-strong-points {
+        visibility: hidden;
+        position: relative;
+    }
+    .replaced-strong-points::after {
+        visibility: visible;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        content: "S";
+    }
+    .site-navigation-item {
+        height: 82px;
+        width: 92px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 0;
+    }
+    .site-navigation-item:last-child {
+        margin-right: 0;
+    }
+    .site-navigation-link {
+        font-family: 'Bitter';
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
     .hero {
         height: 47.75rem;
         font-size: 1.125rem;
@@ -417,7 +511,6 @@ html {
         flex-direction: column;
         background: url(../img/hero\ mobile.jpg) center/cover no-repeat;
         justify-content: flex-start;
-
     }
     .container-section-hero {
         width: 100%;
@@ -448,7 +541,7 @@ html {
     }
     .section-biography-img {
         width: 100%;
-        height: 401px;
+        height: auto;
         order: 3;
     }
     .biography-content {
@@ -489,7 +582,6 @@ html {
         width: 100%;
         gap: 16px;
         overflow-x: auto;
-        
     }
     .section-title.designers {
         margin-left: 16px;
@@ -499,9 +591,6 @@ html {
         max-height: 520px;
         width:100%;
         column-gap: 16px;
-    }
-    .designers-content_desktop-img {
-        display: none;
     }
     .designers-content-img {
         width: 310px;
@@ -546,10 +635,6 @@ html {
     .section-testimonials-img {
         display: none;
     }
-    .testimonials-content-img {
-        display: none;
-    }
-
     .section-title.testimonials{
         transform: none;
         position: static;
@@ -566,17 +651,17 @@ html {
         line-height: 2.25rem;
         margin-bottom: 24px;
     }
+    .testimonials-content-img {
+        width: 100%;
+        object-fit: cover;
+    }
     .testimonials-content{
         grid-column: 1/3;
         grid-row: 2/4;
         display: block;
     }
-    .testimonials-content-img-mobile {
-        width: 100%;
-        object-fit: cover;
-    }
     .section-strong-points {
-        margin-bottom: 80px;
+        margin-bottom: 200px;
     }
     .section-title.strong-points {
         margin-left: 3.6%;
@@ -617,44 +702,6 @@ html {
     .section-strong-points-last-img {
         display: none;
     }
-    .mobile-menu {
-        position: sticky;
-        bottom: 0;
-        z-index: 2;
-        background-color:white;
-        margin-bottom: 80px;
-    }
-    .site-navigation-mobile {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 16px;
-        margin-bottom: 80px;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-    .site-navigation-item {
-        height: 82px;
-        width: 92px;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        padding: 0;
-    }
-    .site-navigation-item:last-child {
-        margin-right: 0;
-    }
-    .site-navigation-link {
-        font-family: 'Bitter';
-        font-weight: 400;
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-    .site-navigation-link:hover {
-        font-weight: 700;
-        border-bottom: 1px solid black;
-    }
-
     .footer {
         width: 100%;
         height: 193px;
@@ -684,37 +731,43 @@ html {
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
     .biography-mobile-version{
         display: none;
     }
     .biography-content-subtitle span {
         display: none;
     }
-    .designers-content_mobile-img {
-        display: none;
-    }
     .testimonials-content-blockquote-mobile {
         display: none;
     }
-    .testimonials-content-img-mobile {
-        display: none;
-    }
-    .nav-mobile {
+    .mobile-menu-wrp {
         display: none;
     }
 }
 @media (min-width: 350px) and (max-width: 450px) {
+    .site-navigation-item {
+        width: 40px;
+    }
     .hero-title {
         text-align: center;
     }
     .biography-content-subtitle {
         text-align: center;
     }
-    .testimonials-content-img-mobile {
-        max-height: 47%;
+    .section-biography-img {
+        height: auto;
+    }
+    .testimonials-content-img {
+        max-height: 50%;
     }
     .testimonials-content-blockquote-mobile {
         max-height: 40%;
+    }
+
+}
+@media (min-width: 500px) and (max-width: 768px) {
+    .section-biography-img {
+        height: 30rem;
     }
 }
