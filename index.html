@@ -11,157 +11,165 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Mod Studio</title>
 </head>
-<body class="body">
+<body>
     <!-- Первая секция. Навигационное меню -->
-    <header class="main-header">
-        <nav class="main-nav">
-            <div class="logo-wrap">
-            <a href="#"><img class="logo" src="img/Logo.svg" alt="Логотип веб-студии"></a>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-wrp">
+            <a href="#"><img src="img/Logo.svg" alt="Логотип веб-студии"></a>
         </div>
-            <ul class="site-navigation">
-                <li class="site-navigation-item">
-                    <a class="site-navigation-link replaced-biography" href="#biography-id">Biography</a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a class="header__menu-link header__menu-mobile-biography" href="#biography-id">Biography</a>
                 </li>
-                <li class="site-navigation-item">
-                    <a class="site-navigation-link replaced-designers replaced" href="#designers-id">Designers</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link header__menu-mobile-designers" href="#designers-id">Designers</a>
                  </li>
-                <li class="site-navigation-item">
-                    <a class="site-navigation-link replaced-testimonials" href="#testimonials-id">Testimonials</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link header__menu-mobile-testimonials" href="#testimonials-id">Testimonials</a>
                 </li>
-                <li class="site-navigation-item">
-                    <a class="site-navigation-link replaced-strong-points" href="#strong points-id">Strong points</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link header__menu-mobile-strong-points" href="#strong points-id">Strong points</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Вторая секция. Заголовок -->
     <main class="main-content">
-        <section class="hero">
-            <div class="container-section-hero">
-            <h1 class="hero-title">Mod Studio</h1>
+        <section class="main-content__hero">
+            <div class="main-content__hero-wrp">
+            <h1 class="main-content__hero-title">Mod Studio</h1>
             <p>Modern Web Studio</p>
         </div>
         </section>
 <!--Третья секция.Biography -->
-<section class="section-biography" id="biography-id">
+<section class="biography" id="biography-id">
+    <div class="biography__inner">
     <picture>
     <source srcset="img/Katya_Mills_mobile.jpg"  media="(max-width: 500px)">
-    <img class="section-biography-img" src="img/photo_Katya_Mills.jpg" alt="Девушка идет по песку"  width="571" height="840">
+    <img class="biography__img" src="img/photo_Katya_Mills.jpg" alt="Девушка идет по песку"  width="571" height="840">
     </picture>
-    <div class="wrp-title">
-    <h2 class="section-title">Biography</h2>
+    <div class="biography__title-wrp">
+    <h2 class="biography__section-title section-title">Biography</h2>
     </div>
-    <div class="biography-content">
-        <h3 class="biography-content-subtitle"><span>-</span>Katya<br> Mills</h3>
-        <p class="biography-desktop-version">Art Director <br> Scenography / Styling / Creative Photography / Design</p>
-        <ul class="biography-mobile-version">
+    <div class="biography__content">
+        <h3 class="biography__content-subtitle"><span>-</span>Katya<br> Mills</h3>
+        <p class="biography__skills biography-desktop-version">Art Director <br> Scenography / Styling / Creative Photography / Design</p>
+        <ul class="biography__mobile-version">
             <li>Art Director</li>
             <li>-Scenography</li>
             <li>-Styling</li>
             <li>-Creative Photography</li>  
             <li>-Design</li>
         </ul>
-        <div class="rectangle"></div>
-        <q class="biography-content-quote">"The more I deal with the work as something that is my own,<br>  as something that is personal, the more <br> successful it is."</q>
+        <div class="biography__rectangle"></div>
+        <q class="biography__quote">"The more I deal with the work as something that is my own,<br>  as something that is personal, the more <br> successful it is."</q>
     </div>
+</div>
 </section>
 <!-- Четвертая секция. Designers-->
-<section class="section-designers" id="designers-id">
-    <h2 class="section-title designers">Designers</h2>
-    <div class="section-designers-wrap">
-    <div class="designers-content">
+<section class="designers" id="designers-id">
+    <h2 class="designers__title section-title">Designers</h2>
+    <div class="designers__inner">
+    <div class="designers__content">
         <picture>
         <source srcset="img/photo_jess_wonder_mobile.jpg" media="(max-width: 768px)">
-        <img class="designers-content-img" src="img/photo_jess_wonder.jpg" alt="Девушка на фоне холма и неба">
+        <img class="designers__content-img" src="img/photo_jess_wonder.jpg" alt="Девушка на фоне холма и неба">
         </picture>
-        <div class="designers-content-wrap">
-        <h3 class="designers-content-subtitle">Jess Wonder</h3>
-        <p><span class="designers-content-bold">From/</span>Be more flower</p>
-        <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
+        <div class="designers__content-wrp">
+        <h3 class="designers__content-subtitle">Jess Wonder</h3>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">From/</span>Be more flower</p>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">Skills/</span>Design Strategy / Marketing</p>
         </div>
     </div>
-    <div class="designers-content">
-        <img class="designers-content-img" src="img/photo_kameron_clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
-        <h3 class="designers-content-subtitle">Kameron Clein</h3>
-        <p><span class="designers-content-bold">From/</span> Be more flower</p>
-        <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
+    <div class="designers__content">
+        <img class="designers__content-img" src="img/photo_kameron_clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
+        <h3 class="designers__content-subtitle">Kameron Clein</h3>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">From/</span> Be more flower</p>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">Skills/</span>Design Strategy / Marketing</p>
     </div>
-    <div class="designers-content">
-        <img class="designers-content-img" src="img/photo_louisse_red.jpg" alt="Девушка с ежедневником в руках" width="336" height="440">
-        <h3 class="designers-content-subtitle">LOUISSE RED</h3>
-        <p><span class="designers-content-bold">From/</span> Be more flower</p>
-        <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
+    <div class="designers__content">
+        <img class="designers__content-img" src="img/photo_louisse_red.jpg" alt="Девушка с ежедневником в руках" width="336" height="440">
+        <h3 class="designers__content-subtitle">LOUISSE RED</h3>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">From/</span> Be more flower</p>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">Skills/</span>Design Strategy / Marketing</p>
     </div>
-    <div class="designers-content">
-        <img class="designers-content-img" src="img/photo_kameron_clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
-        <h3 class="designers-content-subtitle">Kameron Clein</h3>
-        <p><span class="designers-content-bold">From/</span> Be more flower</p>
-        <p><span class="designers-content-bold">Skills/</span>Design Strategy / Marketing</p>
+    <div class="designers__content">
+        <img class="designers__content-img" src="img/photo_kameron_clein.jpg" alt="Девушка с прозрачным клатчем в руках" width="336" height="440">
+        <h3 class="designers__content-subtitle">Kameron Clein</h3>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">From/</span> Be more flower</p>
+        <p><span class="designers__content-subtitle designers__content-subtitle_bold">Skills/</span>Design Strategy / Marketing</p>
     </div>
 </div>
 </section>
 <!--Пятая секция.Testimonials-->
-<section class="section-testimonials" id="testimonials-id">
-    <div class="testimonials-site-1">
-        <p class="testimonials-site-text">Creativity</p>
-        <a class="testimonials-site-link" href="#">www.whitepapers.com</a>
+<section class="testimonials" id="testimonials-id">
+    <div class="testimonials__inner">
+    <div class="testimonials__site-1">
+        <p class="testimonials__site-text">Creativity</p>
+        <a class="testimonials__site-link" href="#">www.whitepapers.com</a>
 </div>
-    <div class="testimonials-site-2">
-    <p class="testimonials-site-text">Creativity</p>
-    <a class="testimonials-site-link" href="#">www.whitepapers.com</a>
+    <div class="testimonials__site-2">
+    <p class="testimonials__site-text">Creativity</p>
+    <a class="testimonials__site-link" href="#">www.whitepapers.com</a>
 </div>
-    <div class="testimonials-site-3">
-        <p class="testimonials-site-text">Website</p>
-        <a class="testimonials-site-link" href="#">www.whitepapers.com</a>
+    <div class="testimonials__site-3">
+        <p class="testimonials__site-text">Website</p>
+        <a class="testimonials__site-link" href="#">www.whitepapers.com</a>
 </div>
-<img class="section-testimonials-img" src="img/photo section-testimonials.jpg" alt="Кофейня изнутри" width="451" height="760">
-<h2 class="section-title testimonials">Testimonials</h2>
-<div class="testimonials-content">
-    <blockquote class="testimonials-content-blockquote">I just really <br>want to do<br> good work <br>and work with<br> some great<br> people, people <br>who challenge<br> me.</blockquote>
-    <blockquote class="testimonials-content-blockquote-mobile">I just really want to do<br> good work and work <br> with some great people,<br> people who challenge<br> me.</blockquote>
+<img class="testimonials__img" src="img/photo section-testimonials.jpg" alt="Кофейня изнутри" width="451" height="760">
+<h2 class="testimonials__title section-title">Testimonials</h2>
+<div class="testimonials__content">
+    <blockquote class="testimonials__content-blockquote">I just really <br>want to do<br> good work <br>and work with<br> some great<br> people, people <br>who challenge<br> me.</blockquote>
+    <blockquote class="testimonials__content-blockquote-mobile">I just really want to do<br> good work and work <br> with some great people,<br> people who challenge<br> me.</blockquote>
 <picture>
     <source srcset="img/photo2_section-testimonials_mobile.jpg" media="(max-width: 768px)">
-    <img class="testimonials-content-img" src="img/photo2_section-testimonials.jpg" alt="Девушка с сумкой-сеткой в руках" width="221" height="333">
+    <img class="testimonials__content-img" src="img/photo2_section-testimonials.jpg" alt="Девушка с сумкой-сеткой в руках" width="221" height="333">
 </picture>
+</div>
 </div>
      </section>
 <!--Шестая секция. Strong points-->
-<section class="section-strong-points" id="strong points-id">
-    <h2 class="section-title strong-points">Strong points</h2>
-    <div class="strong-points-wrap">
-    <p><img class="section-strong-points-img" src="img/photo_section-strong_points.jpg" alt="Стол с ноутбуком" width="335" height="554"></p>
-    <p><img class="section-strong-points-img" src="img/photo-2_section-strong_points.jpg" alt="Кресло в комнате" width="335" height="554"></p>
-    <div class="strong-points-content">
-        <h2 class="strong-points-title" >Strengths</h2>
-        <ul class="wrap">
-            <li class="strong-points-item">Interiors</li>
-            <li class="strong-points-item">Outdoors</li>
-            <li class="strong-points-item">Portraits</li>
-            <li class="strong-points-item">Styling</li>
-            <li class="strong-points-item">Events</li>
-            <li class="strong-points-item">Architecture</li>
-            <li class="strong-points-item">Design</li>
-            <li class="strong-points-item">Celebrations</li>
-            <li class="strong-points-item">Fashion</li>
-            <li class="strong-points-item">Nature</li>
+<section class="strong-points" id="strong points-id">
+    <div class="strong-points__inner">
+    <h2 class="strong-points__title section-title">Strong points</h2>
+    <div class="strong-points__wrp">
+    <p><img class="strong-points__img" src="img/photo_section-strong_points.jpg" alt="Стол с ноутбуком" width="335" height="554"></p>
+    <p><img class="strong-points__img" src="img/photo-2_section-strong_points.jpg" alt="Кресло в комнате" width="335" height="554"></p>
+    <div class="strong-points__content">
+        <h2 class="strong-points__content-title" >Strengths</h2>
+        <ul class="strong-points__list">
+            <li class="strong-points__item">Interiors</li>
+            <li class="strong-points__item">Outdoors</li>
+            <li class="strong-points__item">Portraits</li>
+            <li class="strong-points__item">Styling</li>
+            <li class="strong-points__item">Events</li>
+            <li class="strong-points__item">Architecture</li>
+            <li class="strong-points__item">Design</li>
+            <li class="strong-points__item">Celebrations</li>
+            <li class="strong-points__item">Fashion</li>
+            <li class="strong-points__item">Nature</li>
         </ul>
     </div>
-    <p><img class="section-strong-points-last-img" src="img/photo-3_section-strong_points.jpg" alt="Кофейня изнутри" width="335" height="555"></p>
+    <p><img class="strong-points__last-img" src="img/photo-3_section-strong_points.jpg" alt="Кофейня изнутри" width="335" height="555"></p>
+</div>
 </div>
 </section>
     </main>
     <!--Седьмая секция. Футер-->
     <footer class="footer">
-            <address class="footer-contacts">
-            <a class="footer-contacts-link" href="tel:+79211234567">+7 921 123-45-67</a><br>
-            <a class="footer-contacts-link" href="mailto:info@modstudio.com">info@modstudio.com</a>
+        <div class="footer__inner">
+            <address class="footer__contacts">
+            <a class="footer__contacts-link" href="tel:+79211234567">+7 921 123-45-67</a><br>
+            <a class="footer__contacts-link" href="mailto:info@modstudio.com">info@modstudio.com</a>
         </address>
-        <div class="footer-logo">
-        <p>A product of <span class="footer-logo-bold">MOD</span></p>
+        <div class="footer__logo">
+        <p>A product of <span class="footer__logo-bold">MOD</span></p>
         </div>
-        <div class="footer-copyright">
+        <div class="footer__copyright">
             <p>© 2023 Mod Media. All rights reserved</p>
         </div>
+    </div>
     </footer>
 </body>
 </html>
