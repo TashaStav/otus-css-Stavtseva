@@ -86,7 +86,9 @@
     @include font ("Bitter", 400, 2.5rem, 3rem);
           }
         }
-        
+  .modal-btn {
+    display: none;
+  }
   .main-content {
         &__hero {
           height: 47.75rem;
@@ -266,7 +268,7 @@
             align-items: flex-start;
       }
         &__content-title {
-          @include font ("Playfair Display", 400, 2.875rem, 1.813rem)
+          @include font ("Playfair Display", 400, 2.875rem, 1.813rem);
             padding-top: 10px;
             margin-bottom: 17px;
             height: 46px;
@@ -324,8 +326,8 @@
     .testimonials__content-blockquote-mobile {
         display: none;
       }
-    .mobile-menu-wrp {
-        display: none;
+      .header__menu-link {
+        font-size: 1.45rem;
       }
     }
 @media (min-width: 350px) and (max-width: 450px) {
