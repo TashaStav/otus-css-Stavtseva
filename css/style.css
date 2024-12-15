@@ -447,17 +447,99 @@ html {
 .modal__content {
   display: none;
   width: 100%;
-  max-width: 500px;
-  height: 605px;
+  max-width: 33%;
+  height: 588px;
   background: #FFFFFF;
   padding: 0;
   margin: 0;
   border: none;
   position: absolute;
-  top: 45%;
+  top: 44%;
   left: 51%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
+}
+.modal__content-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 24px;
+}
+.modal__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.758rem;
+}
+.modal__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.318rem;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+}
+.modal__form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-height: 162px;
+}
+.modal__form-label {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.318rem;
+}
+.modal__form-input {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.172rem;
+  color: rgba(0, 0, 0, 0.7);
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding-left: 10px;
+}
+.modal__form-textarea {
+  resize: none;
+  height: 135px;
+  padding-top: 6px;
+}
+.modal__form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width: 100%;
+}
+.modal__close-btn {
+  background-color: white;
+}
+.modal__send-btn {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.form-btn {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.98rem;
+  width: 179.54px;
+  height: 55.45px;
+  border-radius: 8px;
+  border: 1.32px solid rgb(86, 103, 137);
 }
 
 .modal-open {

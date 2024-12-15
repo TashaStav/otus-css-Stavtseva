@@ -440,20 +440,87 @@ html {
     &__content {
         display: none;
         width: 100%;
-        max-width: 500px;
-        height: 605px;
+        max-width: 33%;
+        height: 588px;
         background: #FFFFFF;
         padding: 0;
         margin: 0;
         border: none;
         position: absolute;
-        top: 45%;
+        top: 44%;
         left: 51%;
         transform: translate(-50%, -50%);
         border-radius: 10px;
         }
-
+    
+    &__content-wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 24px;
+        }
+    &__title {
+        @include font ("Roboto", 700, 1.5rem, 1.758rem);
+    }
+    &__description {
+        @include font ("Roboto", 400, 1.125rem, 1.318rem);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 24px;
+        width: 100%;
+    }
+    &__form-item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+        max-height: 162px;
+    }
+    &__form-label {
+        @include font ("Roboto", 500, 1.125rem, 1.318rem);
+    }
+    &__form-input {
+        @include font ("Roboto", 400, 1rem, 1.172rem);
+        color:rgba(0, 0, 0, 0.7);
+        height: 42px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        padding-left: 10px;
+    }
+    &__form-textarea {
+        resize: none;
+        height: 135px;
+        padding-top: 6px;
+    }
+    &__form-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+        width: 100%;
+    }
+    &__close-btn {
+        background-color:white;
+    }
+    &__send-btn {
+        background-color: black;
+        color:#FFFFFF;
+    }
 }
+.form-btn {
+    @include font ("Roboto", 500, 1.125rem, 1.98rem);
+    width: 179.54px;
+    height: 55.45px;
+    border-radius:8px;
+    border: 1.32px solid rgba(86, 103, 137, 1);
+}
+
 .modal-open {
     display: block;
 }
