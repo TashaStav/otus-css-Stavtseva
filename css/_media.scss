@@ -197,22 +197,26 @@
             padding-left: 16px;
             padding-right: 16px;
       }
-        &__site-1 {
+        &__site {
+
+          &_first {
             transform: none;
             grid-column: 1/2;
             grid-row: 4/5;
-      }
-        &__site-2 {
+          }
+      
+          &_second {
             transform: none;
             grid-column: 2/3;
             grid-row: 3/4;
             padding-left: 10px;
-      }
-        &__site-3 {
+          }
+          &_third {
             transform: none;
             grid-column: 1/2;
             grid-row: 3/4;
       }
+    }
         &__img {
             display: none;
       }
@@ -230,10 +234,11 @@
       }
         &__content-blockquote {
             display: none;
-      }
-        &__content-blockquote-mobile {
+
+          &_mobile {
             @include font ("Bitter", 300, 1.875rem, 2.25rem);
             margin-bottom: 24px;
+          }
       }
         &__content-img {
             width: 100%;
@@ -266,7 +271,7 @@
             align-items: flex-start;
       }
         &__content-title {
-          @include font ("Playfair Display", 400, 2.875rem, 1.813rem)
+          @include font ("Playfair Display", 400, 2.875rem, 1.813rem);
             padding-top: 10px;
             margin-bottom: 17px;
             height: 46px;
@@ -280,7 +285,7 @@
         &__item:last-child {
             margin-bottom: 0;
       }
-        &__last-img {
+        &__img_last {
             display: none;
       }
     }
@@ -321,7 +326,7 @@
     .biography__content-subtitle span {
         display: none;
       }
-    .testimonials__content-blockquote-mobile {
+    .testimonials__content-blockquote_mobile {
         display: none;
       }
     .mobile-menu-wrp {
@@ -344,7 +349,7 @@
     .testimonials-content-img {
         max-height: 50%;
       }
-    .testimonials-content-blockquote-mobile {
+    .testimonials-content-blockquote_mobile {
         max-height: 40%;
       }
     }
