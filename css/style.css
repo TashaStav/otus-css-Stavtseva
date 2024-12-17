@@ -102,6 +102,7 @@ html {
   margin-right: 20px;
   position: relative;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .modal-btn__img {
@@ -465,6 +466,18 @@ html {
   align-items: flex-start;
   padding: 20px;
   gap: 24px;
+  position: relative;
+}
+.modal__border {
+  position: absolute;
+  width: 100%;
+  height: 589px;
+  left: 1px;
+  top: 1px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  transform: rotate(2deg);
+  color: rgba(129, 126, 126, 0.6);
 }
 .modal__title {
   font-family: "Roboto";
@@ -483,7 +496,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  gap: 24px;
+  gap: 22px;
   width: 100%;
 }
 .modal__form-item {
@@ -492,6 +505,15 @@ html {
   gap: 6px;
   width: 100%;
   max-height: 162px;
+  position: relative;
+}
+.modal__form-icon {
+  position: absolute;
+  top: 47%;
+  right: 1%;
+}
+.modal__form-icon_textarea {
+  top: 19%;
 }
 .modal__form-label {
   font-family: "Roboto";
@@ -529,6 +551,7 @@ html {
 .modal__send-btn {
   background-color: black;
   color: #FFFFFF;
+  padding-left: 48px;
 }
 
 .form-btn {
@@ -536,10 +559,18 @@ html {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.98rem;
-  width: 179.54px;
-  height: 55.45px;
+  width: 180px;
+  height: 56px;
   border-radius: 8px;
   border: 1.32px solid rgb(86, 103, 137);
+  position: relative;
+  cursor: pointer;
+}
+.form-btn__icon {
+  position: absolute;
+  color: #FFFFFF;
+  left: 64%;
+  font-size: 20px;
 }
 
 .modal-open {
@@ -566,14 +597,15 @@ html {
   .header__nav {
     min-height: auto;
     width: 100%;
+    height: 82px;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   .header__menu {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     gap: 16px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
   }
   .header__menu-link:hover {
     font-weight: 700;
@@ -629,7 +661,8 @@ html {
     line-height: 3rem;
   }
   .modal-btn {
-    display: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
   .main-content__hero {
     height: 47.75rem;
@@ -859,6 +892,15 @@ html {
     text-decoration: underline;
     text-transform: uppercase;
   }
+  .modal__content {
+    width: 100%;
+    max-width: 361px;
+    height: 593px;
+  }
+  .form-btn {
+    width: 151px;
+    height: 54px;
+  }
 }
 @media (min-width: 769px) {
   .biography__mobile-version {
@@ -872,6 +914,11 @@ html {
   }
   .header__menu-link {
     font-size: 1.45rem;
+  }
+  .modal__content {
+    width: 100%;
+    max-width: 498px;
+    height: 588px;
   }
 }
 @media (min-width: 350px) and (max-width: 450px) {
