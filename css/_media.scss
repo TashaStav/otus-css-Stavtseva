@@ -367,6 +367,11 @@
     .testimonials-content-blockquote-mobile {
         max-height: 40%;
       }
+      .modal__content {
+        width: 100%;
+        max-width: 290px;
+        height: 600px;
+    }
     }
 @media (min-width: 500px) and (max-width: 768px) {
     .biography__img {

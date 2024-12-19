@@ -514,11 +514,33 @@ html {
         border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 8px;
         padding-left: 10px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        &:active {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        &:valid {
+            border: 1px solid rgb(97, 216, 97);
+        }
+        &:invalid {
+            border: 1px solid rgb(229, 81, 81);
+        }
     }
+    &__form-input:placeholder-shown {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    
     &__form-textarea {
         resize: none;
         height: 135px;
         padding-top: 6px;
+        &:valid {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        &:invalid {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
     }
 
     &__form-btn {
@@ -531,12 +553,19 @@ html {
     }
     &__close-btn {
         background-color:white;
+        &:hover {
+            border: 2px solid rgb(86, 103, 137);
+        }
     }
 
     &__send-btn {
         background-color: black;
         color:#FFFFFF;
         padding-left: 48px;
+        &:hover {
+            border: 2px solid rgb(168, 174, 184);
+            z-index: 3;
+        }
     }
 }
 .form-btn {
@@ -553,6 +582,7 @@ html {
         color:#FFFFFF;
         left: 64%;
         font-size: 20px;
+        z-index: 3;
     }
 }
 
