@@ -421,7 +421,7 @@ html {
         display: block;
         width: 100%;
         position: fixed;
-        top: 60vh;
+        bottom: 0;
         z-index: 2;
         background-color:white;
     }
@@ -502,7 +502,10 @@ html {
         font-size: 2.5rem;
         line-height: 3rem;
     }
-
+    .main-content 
+    {
+      position: relative;
+    }
     .hero {
         height: 47.75rem;
         font-size: 1.125rem;
