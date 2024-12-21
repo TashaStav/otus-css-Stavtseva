@@ -664,7 +664,7 @@ html {
         display: block;
     }
     .section-strong-points {
-        margin-bottom: 200px;
+        margin-bottom: 80px;
     }
     .section-title.strong-points {
         margin-left: 3.6%;
@@ -711,6 +711,7 @@ html {
         flex-direction: column;
         padding: 0;
         justify-content: flex-start;
+        padding-bottom: 82px;
     }
     .footer-logo {
         width: 92.9%;
