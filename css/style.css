@@ -532,9 +532,11 @@ html {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   padding-left: 10px;
+  transition: transform 300ms;
 }
 .modal__form-input:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 .modal__form-input:active {
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -572,18 +574,30 @@ html {
 }
 .modal__close-btn {
   background-color: white;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 .modal__close-btn:hover {
   border: 2px solid rgb(86, 103, 137);
+}
+.modal__close-btn:active {
+  background-color: #0D0D0D;
+  color: #FFFFFF;
 }
 .modal__send-btn {
   background-color: black;
   color: #FFFFFF;
   padding-left: 48px;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 .modal__send-btn:hover {
   border: 2px solid rgb(168, 174, 184);
   z-index: 3;
+}
+.modal__send-btn:active {
+  background-color: #FFFFFF;
+  color: #0D0D0D;
+  padding: 0;
+  z-index: 4;
 }
 
 .form-btn {
