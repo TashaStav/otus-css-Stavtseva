@@ -177,7 +177,28 @@
     </footer>
     <div class="modal">
 <dialog class="modal__content modal-open">
-    <button class="modal__close-btn" type="button">Cancel</button> 
+    <div class="modal__content-wrp">
+    <h3 class="modal__title">Get in touch</h3>
+    <p class="modal__description">Do you have any questions? Have something to say? Don't be shy, write to us:</p>
+    <form class="modal__form" action="#" method="get">
+        <p class="modal__form-item">
+        <label class="modal__form-label">Name</label>
+        <input class="modal__form-input" type="text" name="name" required placeholder="3+ Characters">
+    </p>
+    <p class="modal__form-item">
+        <label class="modal__form-label">E-mail</label>
+        <input class="modal__form-input" type="email" name="email" required placeholder="name@email.com" pattern="^\S+@\S+\.\S+$">
+    </p>
+    <p class="modal__form-item">
+        <label class="modal__form-label">Comment</label>
+        <textarea class="modal__form-textarea modal__form-input" rows="10" cols="30">Some text...</textarea>
+    </p>
+    </form>
+    <div class="modal__form-btn">
+    <button class="modal__close-btn form-btn" type="button">Cancel</button> 
+    <button class="modal__send-btn form-btn" type="submit">Send</button>
+    </div>
+</div>
 </dialog>
 </div>
 <script>
