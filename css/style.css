@@ -261,29 +261,29 @@ html {
   grid-template-columns: 1fr 2fr 32% 10.5% 32% 9%;
   grid-template-rows: 3% 25% 34% 34% auto;
 }
-.testimonials__site-1 {
+.testimonials__site_first {
+  max-width: 190px;
+  max-height: 49px;
   grid-column: 2/3;
   grid-row: 4/5;
   justify-self: start;
   transform: rotate(-90deg) translate(-95%, 100%);
+}
+.testimonials__site_second {
   max-width: 190px;
   max-height: 49px;
-}
-.testimonials__site-2 {
   grid-column: 2/3;
   grid-row: 3/4;
   justify-self: start;
   transform: rotate(-90deg) translate(-95%, 100%);
+}
+.testimonials__site_third {
   max-width: 190px;
   max-height: 49px;
-}
-.testimonials__site-3 {
   grid-column: 2/3;
   grid-row: 2/3;
   justify-self: start;
   transform: rotate(-90deg) translate(-50%, 115%);
-  max-width: 190px;
-  max-height: 49px;
 }
 .testimonials__img {
   grid-column: 3/4;
@@ -419,7 +419,7 @@ html {
   width: 31%;
   text-align: center;
 }
-.footer__logo-bold {
+.footer__logo_bold {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 1.5rem;
@@ -742,18 +742,18 @@ html {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .testimonials__site-1 {
+  .testimonials__site_first {
     transform: none;
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  .testimonials__site-2 {
+  .testimonials__site_second {
     transform: none;
     grid-column: 2/3;
     grid-row: 3/4;
     padding-left: 10px;
   }
-  .testimonials__site-3 {
+  .testimonials__site_third {
     transform: none;
     grid-column: 1/2;
     grid-row: 3/4;
@@ -776,7 +776,7 @@ html {
   .testimonials__content-blockquote {
     display: none;
   }
-  .testimonials__content-blockquote-mobile {
+  .testimonials__content-blockquote_mobile {
     font-family: "Bitter";
     font-weight: 300;
     font-size: 1.875rem;
@@ -829,7 +829,7 @@ html {
   .strong-points__item:last-child {
     margin-bottom: 0;
   }
-  .strong-points__last-img {
+  .strong-points__img_last {
     display: none;
   }
   .footer__inner {
@@ -867,12 +867,13 @@ html {
   .biography__content-subtitle span {
     display: none;
   }
-  .testimonials__content-blockquote-mobile {
+  .testimonials__content-blockquote_mobile {
     display: none;
   }
   .header__menu-link {
     font-size: 1.45rem;
   }
+
 }
 @media (min-width: 350px) and (max-width: 450px) {
   .header__menu-item {
@@ -890,7 +891,7 @@ html {
   .testimonials-content-img {
     max-height: 50%;
   }
-  .testimonials-content-blockquote-mobile {
+  .testimonials-content-blockquote_mobile {
     max-height: 40%;
   }
 }
