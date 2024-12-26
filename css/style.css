@@ -869,7 +869,7 @@ html {
     object-fit: cover;
   }
   .strong-points__inner {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
   }
   .strong-points__title {
     margin-left: 3.6%;
@@ -916,8 +916,8 @@ html {
     width: 100%;
     height: 193px;
     flex-direction: column;
-    padding: 0;
     justify-content: flex-start;
+    padding: 0 0 82px 0;
   }
   .footer__logo {
     width: 92.9%;
