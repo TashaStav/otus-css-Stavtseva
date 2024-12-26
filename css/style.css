@@ -737,6 +737,7 @@ html {
   .mobile-menu-wrp {
     display: none;
   }
+
 }
 @media (min-width: 350px) and (max-width: 450px) {
   .header__menu-item {
