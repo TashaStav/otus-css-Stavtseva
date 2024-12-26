@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Mod Studio</title>
 </head>
-<body>
+<body class="scroll-active">
     <!-- Первая секция. Навигационное меню -->
     <header class="header">
         <nav class="header__nav">
@@ -32,6 +32,10 @@
                     <a class="header__menu-link header__menu-mobile-strong-points" href="#strong points-id">Strong points</a>
                 </li>
             </ul>
+            <div class="modal-btn">
+                <button type="button" class="modal-btn" id="feedback-button"><img class="modal-btn__img" src="img/btn_modal_window.svg" width="54" height="54"></button>
+
+    </div>
         </nav>
     </header>
     <!-- Вторая секция. Заголовок -->
@@ -171,5 +175,28 @@
         </div>
     </div>
     </footer>
+    <div class="modal">
+<dialog class="modal__content modal-open">
+    <button class="modal__close-btn" type="button">Cancel</button> 
+</dialog>
+</div>
+<script>
+let btnOpen = document.querySelector('.modal-btn');
+let btnClose = document.querySelector('.modal__close-btn');
+let menu = document.querySelector('.modal');
+let scrollActive = document.querySelector('.scroll-active');
+
+btnOpen.onclick = function() {
+	menu.classList.toggle("modal-open");
+	btnClose.classList.toggle("modal-open");
+    scrollActive.classList.toggle("no-scroll");
+}
+
+btnClose.onclick = function() {
+	menu.classList.toggle("modal-open");
+	btnClose.classList.toggle("modal-open");
+    scrollActive.classList.toggle("no-scroll");
+}
+</script>
 </body>
 </html>

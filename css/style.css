@@ -84,10 +84,6 @@ html {
 .header__menu-item {
   padding-right: 4.6%;
 }
-.header__menu-item:last-child {
-  padding-right: 0;
-  margin-right: 20px;
-}
 .header__menu-link {
   font-family: "Roboto";
   font-weight: 500;
@@ -98,6 +94,26 @@ html {
 }
 .header__menu-link:hover {
   border-bottom: 1px solid black;
+}
+
+.modal-btn {
+  width: 54px;
+  height: 54px;
+  margin-right: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.modal-btn__img {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  left: -2px;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Вторая секция. Заголовок */
@@ -418,6 +434,41 @@ html {
   text-align: end;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(129, 126, 126, 0.6);
+}
+.modal__content {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+  height: 605px;
+  background: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: 45%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.modal-open {
+  display: block;
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 @media (max-width: 768px) {
   .header {
     display: block;
@@ -494,6 +545,9 @@ html {
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 3rem;
+  }
+  .modal-btn {
+    display: none;
   }
   .main-content__hero {
     height: 47.75rem;
@@ -734,8 +788,8 @@ html {
   .testimonials__content-blockquote_mobile {
     display: none;
   }
-  .mobile-menu-wrp {
-    display: none;
+  .header__menu-link {
+    font-size: 1.45rem;
   }
 
 }

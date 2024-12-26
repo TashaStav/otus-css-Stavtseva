@@ -86,7 +86,9 @@
     @include font ("Bitter", 400, 2.5rem, 3rem);
           }
         }
-        
+  .modal-btn {
+    display: none;
+  }
   .main-content {
         &__hero {
           height: 47.75rem;
@@ -329,8 +331,8 @@
     .testimonials__content-blockquote_mobile {
         display: none;
       }
-    .mobile-menu-wrp {
-        display: none;
+      .header__menu-link {
+        font-size: 1.45rem;
       }
     }
 @media (min-width: 350px) and (max-width: 450px) {
