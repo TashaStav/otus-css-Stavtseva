@@ -14,14 +14,15 @@
     &__nav {
         min-height: auto;
         width: 100%;
+        height: 82px;
+        border-top: 1px solid rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
           }
     &__menu {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         gap: 16px;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
           }
     &__menu-link:hover {
         font-weight: 700;
@@ -87,8 +88,9 @@
           }
         }
   .modal-btn {
-    display: none;
-  }
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+        }
   .main-content {
         &__hero {
           height: 47.75rem;
@@ -320,6 +322,17 @@
             text-transform: uppercase;
       }
     }
+    .modal {
+      &__content {
+        width: 100%;
+        max-width: 361px;
+        height: 593px;
+      }
+    }
+    .form-btn {
+      width: 151px;
+      height: 54px;
+    }
     }
 @media (min-width: 769px) {
     .biography__mobile-version {
@@ -331,10 +344,15 @@
     .testimonials__content-blockquote_mobile {
         display: none;
       }
-      .header__menu-link {
+    .header__menu-link {
         font-size: 1.45rem;
       }
+    .modal__content {
+        width: 100%;
+        max-width: 498px;
+        height: 588px;
     }
+  }
 @media (min-width: 350px) and (max-width: 450px) {
     .header__menu-item {
         width: 40px;
@@ -360,5 +378,3 @@
         height: 30rem;
       }
     }
-  
-    
