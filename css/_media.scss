@@ -247,7 +247,7 @@
     }
     .strong-points {
         &__inner {
-            margin-bottom: 200px;
+            margin-bottom: 80px;
       }
         &__title {
             margin-left: 3.6%;
@@ -293,8 +293,8 @@
             width: 100%;
             height: 193px;
             flex-direction: column;
-            padding: 0;
             justify-content: flex-start;
+            padding: 0 0 82px 0;
       }
         &__logo {
             width: 92.9%;
