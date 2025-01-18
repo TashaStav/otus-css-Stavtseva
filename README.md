@@ -1,2 +1,1 @@
-# otus-css-Stavtseva
-my first project on github
+Landing page of Mod Studio company
